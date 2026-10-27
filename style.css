@@ -1,0 +1,222 @@
+/* Basic reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f7fb;
+    color: #1e293b;
+    line-height: 1.6;
+}
+
+/* Header */
+.header {
+    background: #155eef;
+    color: white;
+    text-align: center;
+    padding: 24px 15px;
+}
+
+.logo {
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.header p {
+    font-size: 14px;
+}
+
+/* Main hero section */
+.hero {
+    text-align: center;
+    padding: 40px 15px;
+    background: linear-gradient(135deg, #155eef, #6c8cff);
+    color: white;
+}
+
+.hero h1 {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 15px;
+    margin-bottom: 22px;
+}
+
+/* Search box */
+#searchInput {
+    width: 100%;
+    max-width: 500px;
+    padding: 14px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    outline: none;
+}
+
+/* Question papers section */
+.papers-section {
+    max-width: 1100px;
+    margin: auto;
+    padding: 30px 18px;
+}
+
+.papers-section h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Filters */
+.filters {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 25px;
+}
+
+.filters select {
+    flex: 1;
+    min-width: 0;
+    padding: 12px;
+    border: 1px solid #d0d5dd;
+    border-radius: 8px;
+    background: white;
+    font-size: 14px;
+}
+
+/* Papers grid */
+.papers-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 18px;
+}
+
+/* Individual paper card */
+.paper-card {
+    background: white;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.06);
+    border: 1px solid #e5eaf2;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.paper-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.paper-icon {
+    font-size: 32px;
+    margin-bottom: 8px;
+}
+
+.paper-card h3 {
+    font-size: 19px;
+    margin-bottom: 8px;
+    color: #155eef;
+}
+
+.paper-card p {
+    font-size: 14px;
+    color: #403474;
+    margin-bottom: 5px;
+}
+
+/* View/download button */
+.paper-button {
+    display: block;
+    text-align: center;
+    background: #a1cb16;
+    color: white;
+    text-decoration: none;
+    padding: 11px;
+    border-radius: 7px;
+    margin-top: 15px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.paper-button:hover {
+    background: #1048bd;
+}
+
+.paper-button.disabled {
+    background: #98a2b3;
+    cursor: not-allowed;
+}
+
+/* No results message */
+.no-results {
+    text-align: center;
+    padding: 25px 10px;
+    color: #667085;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 22px 15px;
+    background: #101828;
+    color: white;
+    font-size: 13px;
+    margin-top: 30px;
+}
+
+/* Tablet */
+@media (max-width: 800px) {
+    .papers-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .hero h1 {
+        font-size: 26px;
+    }
+}
+
+/* Mobile phones */
+@media (max-width: 500px) {
+    .logo {
+        font-size: 21px;
+    }
+
+    .hero {
+        padding: 32px 16px;
+    }
+
+    .hero h1 {
+        font-size: 24px;
+    }
+
+    .papers-section {
+        padding: 25px 12px;
+    }
+
+    .papers-section h2 {
+        font-size: 21px;
+    }
+
+    .filters {
+        flex-direction: column;
+    }
+
+    .filters select {
+        width: 100%;
+        padding: 13px;
+        font-size: 16px;
+    }
+
+    .papers-grid {
+        grid-template-columns: 1fr;
+        gap: 14px;
+    }
+
+    .paper-card {
+        padding: 18px;
+    }
+}

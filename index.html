@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>UP Board Paper Hub | Class 12</title>
+
+    <meta name="description"
+          content="Find and download UP Board Class 12 previous year question papers.">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="header">
+        <div class="logo">📚 UP Board Paper Hub by Utkarsh Bhai</div>
+        <p>Class 12 Previous Year Question Papers and notes</p>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h1>Prepare Better. Score Higher.</h1>
+            <p>Find your UP Board Class 12 previous year question papers and notes</p>
+
+            <input
+                type="search"
+                id="searchInput"
+                placeholder="Search subject or year..."
+                aria-label="Search question papers"
+            >
+        </section>
+
+        <section class="papers-section">
+            <h2>Class 12 Question Papers and Notes</h2>
+
+            <div class="filters">
+                <select id="subjectFilter" aria-label="Filter by subject">
+                    <option value="all">All Subjects and notes</option>
+                    <option value="Hindi model paper">Hindi model paper</option>
+                    <option value="General hindi paper1">Hindi1</option>
+                    <option value="General hindi paper2">Hindi2</option>
+                    <option value="General hindi paper3">Hindi3</option>
+                    <option value="English model paper">English model paper</option>
+                    <option value="English paper1">English1</option>
+                    <option value="English paper2">English2</option>
+                    <option value="Physics model paper">Physics model paper</option>
+                    <option value="Physics paper1">Physics1</option>
+                    <option value="Physics paper2">Physics2</option>
+                    <option value="Physics paper3">Physics3</option>
+                    <option value="Physics paper4">Physics4</option>
+                    <option value="Physics paper5">Physics5</option>
+                    <option value="Chemistry model paper">Chemistry model paper</option>
+                    <option value="Chemistry paper1">Chemistry1</option>
+                    <option value="Chemistry paper2">Chemistry2</option>
+                    <option value="Chemistry paper3">Chemistry3</option>
+                    <option value="Math model paper">Math model paper</option>
+                     <option value="Mathematics2">Mathematics</option>
+                      <option value="Mathematics3">Mathematics</option>
+                    <option value="Biology model paper">Biology model paper</option>
+                    <option value="Biology paper1">Biology1</option>
+                    <option value="Biology paper2">Biology2</option>
+                    <option value="Biology paper3">Biology3</option>
+                    <option value="Hindi notes">Hindi notes</option>
+                    <option value="english grammar notes">English notes</option>
+                    <option value="physics notes">Physics notes</option>
+                    <option value="chemistry ch.1-9 notes">Chemistry notes</option>
+                     <option value="chemistrych10-14 notes">Chemistry notes2nd</option>
+                    <option value="math notes">Mathematics notes</option>
+                    <option value="biology notes">Biology notes</option>
+                    
+                </select>
+
+                <select id="yearFilter" aria-label="Filter by year">
+                    <option value="all">years</option>
+                    <option value="2020">2020</option>
+                    <option value="modelpaper">model paper2026</option>
+                </select>
+            </div>
+
+            <div id="papersContainer" class="papers-grid">
+                <!-- Question papers will appear here using JavaScript. -->
+            </div>
+
+            <p id="noResults" class="no-results" hidden>
+                No question papers found. Try another search.
+            </p>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2026 UP Board Paper Hub</p>
+        <p>For educational purposes only.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
